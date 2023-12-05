@@ -7,7 +7,22 @@
         var photos = [
             'https://lh3.googleusercontent.com/pw/ADCreHdTzgK3wkyf6z7j6uBp3vspITGSqMT9sYE8SQtBHwr-utPmkKVHqSiJMhTi1M4-KckEFRBoH64EU5NU7pBtH1HrjYryOsX3QIY8PoCqn9o482rsyGtGih3UeLoQ51oTvGGThRMeVjKQZi5J6gtLztrt=w752-h1003-s-no-gm?authuser=6',
             'https://lh3.googleusercontent.com/pw/ADCreHfM2cQx3f6Ka-KEHda-fcVc55u4be6jhVOpmYT2xZZJ9bievFGbtXwVBDIqk57Bj9Ik6NWLIRGx_3cFF_kQ5s0lTSSSOn1N_t4F-llu5aqQzUBRTOCIHgsv6S760yfyR-dC5_hCVZSfHZL6Jls88oGU=w564-h1003-s-no-gm?authuser=6',
-            'https://lh3.googleusercontent.com/pw/ADCreHdc3KjNzKaO874bvmqKn_E0DiNfc371FQLrwGRoHPjlF4SJFn4Y6VcJeLdBp9LIwg_m7PJTV20w59__CxXL1t2e1dhDeklhVeDifQkTkPGl98T-KgihCu6NMDooDXd9jGa_TXPZVX4V9LdPYTbrfXBV=w752-h1003-s-no-gm?authuser=6'
+            'https://lh3.googleusercontent.com/pw/ADCreHdc3KjNzKaO874bvmqKn_E0DiNfc371FQLrwGRoHPjlF4SJFn4Y6VcJeLdBp9LIwg_m7PJTV20w59__CxXL1t2e1dhDeklhVeDifQkTkPGl98T-KgihCu6NMDooDXd9jGa_TXPZVX4V9LdPYTbrfXBV=w752-h1003-s-no-gm?authuser=6',
+            'https://lh3.googleusercontent.com/pw/ADCreHfgDQpa0nccP3kikdJhId1oTrH0dnAfhZFEdcVInTYD4EM1K5beToegNqG43W8vTDQYd_bVecTD6i12Wj2ZSwm9rOtXblZjXkd7e9fhgS9ASQYnOkTbHK_wSyQ-9p-iLC-9og6pxuLeUMN-QpSDqNmE=w559-h993-s-no-gm?authuser=6',
+            'https://lh3.googleusercontent.com/pw/ADCreHfYUygad7SWNxAIaJw_2eGQCKw9u-UHgbleMXPbV6OrukgzB0Y9W-dhDYoTNdO71Gvo4INElgGlYsRjBrI0ElSgDYLcMAuYsXxFDdJiOYk32qfQvaSyWReP2MdRPRU0dbscd4y4y53X0XTthg8RGqZ0=w958-h539-s-no-gm?authuser=6',
+            'https://lh3.googleusercontent.com/pw/ADCreHckq6NEMPUvBhbMw1QF_t7UYcD2HxvjGhOsRyFuyfwXP-rsXWWHH0dhkngJ3G_sFW8N6ocikqFS5jeLNqtrO2F4MqPmhqC8oN2_cOBvItVN4WaHCL8hI0f9M9I5lr5aYX-ZOWUJWiEGdZwc6lrg3Ojl=w559-h993-s-no-gm?authuser=6',
+            'https://lh3.googleusercontent.com/pw/ADCreHeeik_qm6njS0kvRYCrWNtWh4CZg3hUbYXpn_1l59sxcc0QxRkiCkLr3N0M9x0eG8OV7JVuYqWg7beWXF2z40W_HRRtal1NxDQ9jbEyQZhBkuboOzzBqibI56HClq3VvXFRK6Yb3dquIkd1X-RRDQhe=w559-h993-s-no-gm?authuser=6',
+            'https://lh3.googleusercontent.com/pw/ADCreHdl-FlM-HUTPCNC9-wsnJrk7D2qKYdR787cZU4Rw0t86AjlK9X6KEnsuFyb_8sDWEj30AZuCgS31dRqX7CMHTCW5GOWx_Zo3JmW_yZhITr04mPnCoqmP0fudElcAiJz50PCN5fQ7GSUSU0hof1IFNAe=w559-h993-s-no-gm?authuser=6',
+            'https://lh3.googleusercontent.com/pw/ADCreHd8xrVx3O13m6MWl0tjuEC-F1qWos1RnRZADlNASZmKlEArVo0jLnKGhP-ZvXLvvP_maYf9Mi3kv0wHhbwMUyadUo7YzEpeYy-4WmtdpqEWhWTT1HRIXhpZJwDI0ZfDNoGT1FAXWh43dr715NSZqSWV=w958-h539-s-no-gm?authuser=6',
+            'https://lh3.googleusercontent.com/pw/ADCreHdsoUYX6b3cgPslST01kdSDWmtLBrC4NJy7cIPcEMCOScSQsBWFt9pGLK6k6eZkh1Ya7UJPG7HWfozxqPFlcqxYj2aKTgo-zBJgNOEoJSX7GkCE8RTdWrLJc8hcUWcpMvY0aqQcVdqqBmnYW0a6oxGa=w559-h993-s-no-gm?authuser=6',
+            'https://lh3.googleusercontent.com/pw/ADCreHenJN2SmgaaWfZrY4rhgPU--Npob1XmJRUOiAqY2WmTYW9TdNMp8ONJ-1RHKlP7KrjCVAvc5mZRRE9pJfxKlw7Emz2dQ5yidBAvw59kfsRGLEPahX7rvEkbfFWeuGRM2S67IuDYUHO3HFVWNXcTB5vc=w559-h993-s-no-gm?authuser=6',
+            'https://lh3.googleusercontent.com/pw/ADCreHco7omecAhMlQ5yDQc5wp5fH41SMXvAyM9Wa3_0Oq7xo7xQyJpWsMmdFxgxtJcnL_bp4SmmnAuZgQ4BCz4240Ma9S_qVt6H6QlYe5sKeKjeS-ipkp2FrATUJE49_zBQCZ48JLZsDL570-IESEeCouC3=w958-h539-s-no-gm?authuser=6',
+            'https://lh3.googleusercontent.com/pw/ADCreHdPPRw-0w3hNSKPhhtEfCryH5CHyQZSWPPYcWR7pSTxSqkG1A-ByKmHU1outKinzTqKjxNPMon1aTLnbnR_vvurxtWcnqenLq5NHGKBPakwf0R1ElXEBU8zPzUracm_rgfBI7ZKx7KgUXWQnCApEn_4=w958-h867-s-no-gm?authuser=6',
+            'https://lh3.googleusercontent.com/pw/ADCreHd8DSpzUuv2DfgLf69_ByH4vziCjugZTNV78XCSu1PPGpvzzAHH6fBDrM8IZT_EVYlHSJNQIF-jd81v_hUUkd82iSahvYiN8P4E1bU9QvJdo_9MYOGwMuylntMd4JXl0vYtPs_uY9ewd5gVPbirqwji=w958-h539-s-no-gm?authuser=6',
+            'https://lh3.googleusercontent.com/pw/ADCreHe0p_B3tPIv5VVaiWDJEpcwkXEg3bPqWS9bQSzh8NO-os4Al-Scwm5fNojG5wyvn_JVPu9D4FH2wvdEKkXonx5JR0RjXynfAOB4lSpy5jZ09Sq6m-2wPFj2R9_IKzjo1cRFLV1bEVuUrAqAN1F-FX5g=w719-h993-s-no-gm?authuser=6',
+            'https://lh3.googleusercontent.com/pw/ADCreHcd2s44t6OaZuc-yTV9bDInf4Xo2P9LlzbVwIPHMErdlZDGGdN8Cy-D8Uh1b1naDcT4LhWPdEMFdP5cfzVyE3lHeCXUX5n8K-am1QQkxlRKs6iEjjb1uQAo6t_nYslEF069gJRbvcc6Nv2mEQGty7HV=w958-h639-s-no-gm?authuser=6',
+            'https://lh3.googleusercontent.com/pw/ADCreHfkjo27SoAALm79C7PcQkW4YqL7oAK4-cdO9hd7BiPfTXA415ZRE6OdOFsh6diZQD3DZXPWt_GZh6RdLLtfa3E4AVlCJybxPQOA46LzOoj9PIp4kg21AiPhsn3OLSi3_-ocYS4v3oGIaksNjetmmA6y=w559-h993-s-no-gm?authuser=6',
+            
             // ... add all photo URLs here as strings, comma-separated
         ];
 
