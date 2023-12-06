@@ -37,7 +37,9 @@
 
         function getRandomPhoto() {
             var randomIndex = Math.floor(Math.random() * photos.length);
-            window.location.href = photos[randomIndex]; // Redirects to the random photo
+            var img = document.createElement('img');
+            img.src = photos[randomIndex];
+            document.body.appendChild(img); // Redirects to the random photo
         }
 
         window.onload = getRandomPhoto; // Calls the function when the page loads
