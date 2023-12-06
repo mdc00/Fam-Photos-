@@ -2,6 +2,15 @@
 <html>
 <head>
     <title>Random Family Photo</title>
+    <style>
+        /* CSS to make the image scale to fit the screen */
+        img {
+            width: 100vw;   /* 100% of the viewport width */
+            height: 100vh;  /* 100% of the viewport height */
+            object-fit: contain; /* Scale the image to fit the size of the container while maintaining aspect ratio */
+        }
+    </style>
+    
     <script type="text/javascript">
         // Ensure your URLs are direct links to the images and are publicly accessible
         var photos = [
